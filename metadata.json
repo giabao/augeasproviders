@@ -1,10 +1,10 @@
 {
-  "name": "domcleal-augeasproviders",
+  "name": "sandinh-augeasproviders",
   "author": "domcleal",
   "description": "This module provides alternative providers for core Puppet types using the Augeas configuration API library.",
   "license": "Apache 2.0",
-  "project_page": "http://github.com/hercules-team/augeasproviders",
-  "source": "git://github.com/hercules-team/augeasproviders",
+  "project_page": "http://github.com/giabao/augeasproviders",
+  "source": "git://github.com/giabao/augeasproviders",
   "summary": "Alternative Augeas-based providers for Puppet",
   "version": "0.6.0",
   "checksums": {
@@ -16,7 +16,7 @@
     "Gemfile": "ffa40ea09033c6dd01e997d9fef79825",
     "Gemfile.lock": "a5f3369af18f023c44abbc69931b3ed9",
     "LICENSE": "0a23d6c579795bb78b0de2ba06b1dfeb",
-    "Modulefile": "f2713f8eaed24cf2d4894384e8188806",
+    "Modulefile": "5f8d975c70f1db9f42b939cbef3f5cc3",
     "README.md": "e9ebaf8d9cb0a4e6d22ca62fb2034c36",
     "Rakefile": "d0a7bcdb74658217895c7f13d3f4b1de",
     "augeas/.gnulib/COPYING": "e4cf3810f33a067ea7ccd2cd889fed21",
