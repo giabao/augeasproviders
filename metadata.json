@@ -6,18 +6,18 @@
   "project_page": "http://github.com/giabao/augeasproviders",
   "source": "git://github.com/giabao/augeasproviders",
   "summary": "Alternative Augeas-based providers for Puppet",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "checksums": {
     ".fixtures.yml": "8f713a41e74ad23fadb004070629c1e2",
     ".travis.sh": "673a9e17da63b39417b16ab31dcd90cb",
-    ".travis.yml": "bfe7852002361c3ee453f0db1290e1e9",
-    "CHANGELOG.md": "73c679a582790b5ed239193f533b7979",
+    ".travis.yml": "52cd1cf728430a5e9787b7f6240d795d",
+    "CHANGELOG.md": "472829063a0b9de6015205076fe10c13",
     "CONTRIBUTING.md": "11e7aa5b3f05c7b09d32a385578db71f",
-    "Gemfile": "ffa40ea09033c6dd01e997d9fef79825",
-    "Gemfile.lock": "a5f3369af18f023c44abbc69931b3ed9",
+    "Gemfile": "423a1f37908617cf59eda6cfa201463e",
+    "Gemfile.lock": "f99b5d52fc0e97e8c43415531b89649d",
     "LICENSE": "0a23d6c579795bb78b0de2ba06b1dfeb",
-    "Modulefile": "5f8d975c70f1db9f42b939cbef3f5cc3",
-    "README.md": "e9ebaf8d9cb0a4e6d22ca62fb2034c36",
+    "Modulefile": "a6c116d1826f6f5ac1c60357152f7722",
+    "README.md": "17fa460c65b8cb025a1d1bc996a24f5a",
     "Rakefile": "d0a7bcdb74658217895c7f13d3f4b1de",
     "augeas/.gnulib/COPYING": "e4cf3810f33a067ea7ccd2cd889fed21",
     "augeas/.gnulib/ChangeLog": "f1759b564fb4eb0776bf0d74e10ea500",
@@ -9790,12 +9790,13 @@
     "docs/examples/mailalias.md": "5e13bdf971e6c1ae81ce946c4cde9276",
     "docs/examples/mounttab.md": "a244e500f1ce2d991e56dc93dc7cb869",
     "docs/examples/nrpe_command.md": "6ae395751d493a28ca591078a6587695",
+    "docs/examples/pg_hba.md": "be48d901f065eb79eb812a99047ab7ff",
     "docs/examples/puppet_auth.md": "35c2400a4c63112680da83d24a901674",
     "docs/examples/shellvar.md": "60d54a397100036af274cf3f4576838e",
     "docs/examples/sshd_config.md": "226cd405bfafb81cba6bc3baf9d99182",
     "docs/examples/sshd_config_subsystem.md": "e5dacd86a8bb2679f08908ecbbb2f42f",
-    "docs/examples/sysctl.md": "9dcf5b2a310960a7cc3aeb1e8b83d693",
-    "docs/examples/syslog.md": "231514e5bb6494d123f50c11d02587c8",
+    "docs/examples/sysctl.md": "1d41d081676e14ec7afa3a10ec77f2ea",
+    "docs/examples/syslog.md": "355e0ff109881a34986302676d258791",
     "docs/examples_header.md": "30ca99c44f2c022d61c33d3c951f5e4c",
     "docs/images/augeasproviders-spec-augparse.png": "19df7091646b354bcf85903b28cdf2d6",
     "docs/images/augeasproviders-spec-part1.png": "9d4bd03096614a39bf0d8beeb1537749",
@@ -9807,7 +9808,7 @@
     "lib/augeasproviders/mounttab.rb": "d0dd1845a9408148eed0d8dbb93790c2",
     "lib/augeasproviders/mounttab/fstab.rb": "8cdf643bac551851520ac41d7e21e0eb",
     "lib/augeasproviders/mounttab/vfstab.rb": "e92e3181cfba3801063916d3dcd828dd",
-    "lib/augeasproviders/provider.rb": "d2642f24b6f362e1506361cf4246a9ec",
+    "lib/augeasproviders/provider.rb": "cd2837b273d337c4d6a1b128c1a759fd",
     "lib/puppet/provider/apache_setenv/augeas.rb": "df7d4e509d73072a854fd1cf9f751926",
     "lib/puppet/provider/host/augeas.rb": "9c18068be5733c7085f129bccd903f3d",
     "lib/puppet/provider/kernel_parameter/grub.rb": "065ed52212f4ea6847450a6c05f46d8a",
@@ -9815,20 +9816,23 @@
     "lib/puppet/provider/mailalias/augeas.rb": "8ffa97b78b7a88e52e648b1468e68aab",
     "lib/puppet/provider/mounttab/augeas.rb": "565d1ce9bce8ffc14e3a7246080dbb8b",
     "lib/puppet/provider/nrpe_command/augeas.rb": "a1bcdce77d9a00159452ad7f9c37ad49",
+    "lib/puppet/provider/pg_hba/augeas.rb": "2e4b95758644740b953f00e4505ace12",
     "lib/puppet/provider/puppet_auth/augeas.rb": "a75791f08729e7d236d986a9a7e517bd",
     "lib/puppet/provider/shellvar/augeas.rb": "951e9a62483cb841efca97f2af58c79c",
     "lib/puppet/provider/sshd_config/augeas.rb": "adbdbbb794e23114401c096b9e2bb6a1",
     "lib/puppet/provider/sshd_config_subsystem/augeas.rb": "711cc17884019f124ef4a1c45aa0ad9b",
-    "lib/puppet/provider/sysctl/augeas.rb": "b21f19a395ee5e5905283246e344a68e",
-    "lib/puppet/provider/syslog/augeas.rb": "7c9ae515721d5a405320d82f6604673e",
+    "lib/puppet/provider/sysctl/augeas.rb": "e827296181abd90dad8895b3dac782a8",
+    "lib/puppet/provider/syslog/augeas.rb": "4768e5ae4bccfd22aa73b29c4a0014fe",
+    "lib/puppet/provider/syslog/rsyslog.rb": "951e3b1a40d8d711d9e3fa9b62090edd",
     "lib/puppet/type/apache_setenv.rb": "fda119ee5a358fed5084eec3645fb3b7",
     "lib/puppet/type/kernel_parameter.rb": "67001878bff3cf42389dba0c744013ca",
     "lib/puppet/type/nrpe_command.rb": "79e20e9d9b2b15c4f7c94887d3ca7c78",
+    "lib/puppet/type/pg_hba.rb": "bb95ae267facfba720ecb2d8fd70f340",
     "lib/puppet/type/puppet_auth.rb": "40f0cc3c29d41f42e673d0adf1e654a0",
     "lib/puppet/type/shellvar.rb": "0702db5da6e5e141b1e4e772088505fd",
     "lib/puppet/type/sshd_config.rb": "00d505a05de0d7cad0500a4e7baabd62",
     "lib/puppet/type/sshd_config_subsystem.rb": "b20000fb8493a1bf42942211612dee00",
-    "lib/puppet/type/sysctl.rb": "dce6eaf785ab669694e01e48fe59e4af",
+    "lib/puppet/type/sysctl.rb": "98168cd2301ce8ad46c1e25211319a8c",
     "lib/puppet/type/syslog.rb": "8dd63c8c899973d9741ea0fdea51e34d",
     "manifests/init.pp": "33a2ec2e85db97f9b8b3e27d7b08e7d5",
     "spec/fixtures/unit/augeasproviders/provider/full": "20380104252d133d336cec79930ac625",
@@ -9855,9 +9859,15 @@
     "spec/fixtures/unit/puppet/nrpe_command/broken": "7657a3a3c58088d06aa33ab174622ef4",
     "spec/fixtures/unit/puppet/nrpe_command/empty": "d41d8cd98f00b204e9800998ecf8427e",
     "spec/fixtures/unit/puppet/nrpe_command/full": "f51ce4ffb282fdd0782db7993ea230a7",
+    "spec/fixtures/unit/puppet/pg_hba/broken": "cf43a8b553a24d7fada4537d28911cae",
+    "spec/fixtures/unit/puppet/pg_hba/empty": "68b329da9893e34099c7d8ad5cb9c940",
+    "spec/fixtures/unit/puppet/pg_hba/full": "068aafbab0d59bedf45bed12699f67e0",
     "spec/fixtures/unit/puppet/puppet_auth/broken": "56f785241d0ed9fe51a8170b9dd50272",
     "spec/fixtures/unit/puppet/puppet_auth/empty": "d41d8cd98f00b204e9800998ecf8427e",
     "spec/fixtures/unit/puppet/puppet_auth/full": "1bf33c8f5fa99e42a5490cf8166a3c80",
+    "spec/fixtures/unit/puppet/rsyslog/broken": "0d97022df1ad5428512f5c20f49e5b79",
+    "spec/fixtures/unit/puppet/rsyslog/empty": "d41d8cd98f00b204e9800998ecf8427e",
+    "spec/fixtures/unit/puppet/rsyslog/full": "ab5109f47b56cdf68d1a49d1dc2f161e",
     "spec/fixtures/unit/puppet/shellvar/broken": "b25c9c687a562b638209926a7cdeec02",
     "spec/fixtures/unit/puppet/shellvar/empty": "d41d8cd98f00b204e9800998ecf8427e",
     "spec/fixtures/unit/puppet/shellvar/full": "68ae7aa51bbaf44a48aa5693bb42f422",
@@ -9876,8 +9886,8 @@
     "spec/fixtures/unit/puppet/syslog/empty": "d41d8cd98f00b204e9800998ecf8427e",
     "spec/fixtures/unit/puppet/syslog/full": "3509686927da43b107dc1090d0caaaae",
     "spec/lib/augeas_spec.rb": "347f96f25a5610c69519af8c05cf35d5",
-    "spec/lib/augeas_spec/augparse.rb": "b5b481eced497976dc863dd99efac726",
-    "spec/lib/augeas_spec/fixtures.rb": "a07ccd806bf3ea8dc783459c1e163c30",
+    "spec/lib/augeas_spec/augparse.rb": "aba3b1e4cba77c5cae79b365a8625f67",
+    "spec/lib/augeas_spec/fixtures.rb": "29d7a29d9e805cc88f8c2c9c8ed01883",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "spec/spec_helper.rb": "cef82768ac5d3fbb34dbec78026926ce",
     "spec/unit/augeasproviders/provider_spec.rb": "f7412b9683af2cc7f0889f70b2d8c490",
@@ -9889,13 +9899,15 @@
     "spec/unit/puppet/mounttab_fstab_spec.rb": "cd0c0fbc69b8ecbbffa3133b2b990584",
     "spec/unit/puppet/mounttab_vfstab_spec.rb": "3164177dda2e70bc9f080446d820dfeb",
     "spec/unit/puppet/nrpe_command_spec.rb": "76a2c16c4efe243712aee07395496852",
+    "spec/unit/puppet/pg_hba_spec.rb": "ef79c198ca071b2cb5cfb44231c1d901",
     "spec/unit/puppet/puppet_auth_spec.rb": "054fa32fa93c5cfb4f0091bf383f49a7",
+    "spec/unit/puppet/rsyslog_spec.rb": "38d363ef4cf9288f8497bcf3ddd9bdc7",
     "spec/unit/puppet/shellvar_spec.rb": "af8eae3e86ed743f55b4e67867567b39",
     "spec/unit/puppet/shellvar_type_spec.rb": "2f18150a7c96830e639546a4dafff3e2",
     "spec/unit/puppet/sshd_config_spec.rb": "41cc6cdba567e7d2f75d0389dac2c940",
     "spec/unit/puppet/sshd_config_subsystem_spec.rb": "67981a6574c38f49ec3edec9be8832cf",
-    "spec/unit/puppet/sysctl_spec.rb": "161f223719f7742f98bed9ccb54fb87d",
-    "spec/unit/puppet/syslog_spec.rb": "2614ea696eef015e84cb68f52ae00670"
+    "spec/unit/puppet/sysctl_spec.rb": "d53bad1cc631f26985621cac8d499d65",
+    "spec/unit/puppet/syslog_spec.rb": "b69f646aff0a9e388240ee6e2411c6dd"
   },
   "types": [
     {
@@ -10140,6 +10152,56 @@
       "parameters": [
         {
           "name": "name",
+          "doc": "The default namevar"
+        },
+        {
+          "name": "type",
+          "doc": "The type of host"
+        },
+        {
+          "name": "database",
+          "doc": "The database"
+        },
+        {
+          "name": "user",
+          "doc": "The user"
+        },
+        {
+          "name": "address",
+          "doc": "The address (for host, hostssl, hostnossl types)"
+        },
+        {
+          "name": "target",
+          "doc": "The file in which to the pg_hba rule"
+        },
+        {
+          "name": "position",
+          "doc": "Where to place the new entry"
+        }
+      ],
+      "properties": [
+        {
+          "name": "method",
+          "doc": "The authentication method"
+        },
+        {
+          "name": "options",
+          "doc": "The hash of authentication options"
+        }
+      ],
+      "providers": [
+        {
+          "name": "augeas",
+          "doc": "Uses Augeas API to update pg_hba settings"
+        }
+      ],
+      "name": "pg_hba",
+      "doc": "Manages commands in pg_hba.conf."
+    },
+    {
+      "parameters": [
+        {
+          "name": "name",
           "doc": "The name of the resource."
         },
         {
@@ -10177,6 +10239,10 @@
         {
           "name": "augeas",
           "doc": "Uses Augeas API to update a syslog.conf entry"
+        },
+        {
+          "name": "rsyslog",
+          "doc": "Uses Augeas API to update an rsyslog.conf entry"
         }
       ],
       "name": "syslog",
@@ -10191,6 +10257,10 @@
         {
           "name": "target",
           "doc": "The file in which to store the settings, defaults to\n      `/etc/sysctl.conf`."
+        },
+        {
+          "name": "apply",
+          "doc": "Whether to apply the value using the sysctl command."
         }
       ],
       "properties": [
